@@ -2,7 +2,7 @@
 
 Turn your voice into a prompt!
 
-![UI screenshot](https://raw.githubusercontent.com/jhj0517/stable-diffusion-webui-Speech-To-Text-Prompter/master/screenshot.png?token=GHSAT0AAAAAAB6KX4BXMM3SDA3RMHIZXGJQZAGY65A)
+![UI screenshot](https://raw.githubusercontent.com/jhj0517/stable-diffusion-webui-Speech-To-Text-Prompter/master/screenshot.png?token=GHSAT0AAAAAAB6KX4BW3G47HIHOIPSXGJEUZAGZTCA)
 
 # Prerequisites
 `ffmpeg` must be installed to run Whisper. 
