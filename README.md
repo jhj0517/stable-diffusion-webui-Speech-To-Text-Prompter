@@ -5,11 +5,11 @@ Turn your voice into a prompt!
 ![UI screenshot](https://raw.githubusercontent.com/jhj0517/stable-diffusion-webui-Speech-To-Text-Prompter/master/screenshot.png?token=GHSAT0AAAAAAB6KX4BW3G47HIHOIPSXGJEUZAGZTCA)
 
 # Prerequisites
-`ffmpeg` must be installed to run Whisper. 
+`FFmpeg` must be installed to run Whisper. 
 
-Please install `ffmpeg` compatible with your OS from the following link.
+Please install `FFmpeg` compatible with your OS from the following link.
 
-- `ffmpeg` : https://ffmpeg.org/download.html
+- `FFmpeg` : https://ffmpeg.org/download.html
 
 # Installation
 `git clone https://github.com/jhj0517/stable-diffusion-webui-Speech-To-Text-Prompter.git` to your stable-diffusion-webui extensions folder.
