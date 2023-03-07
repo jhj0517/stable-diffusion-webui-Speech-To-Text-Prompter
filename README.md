@@ -23,6 +23,8 @@ or alternatively, download and unzip the repository in your extensions folder!
 
 # Available models
 
+The Extension uses the Open AI Whisper model
+
 |  Size  | Parameters | English-only model | Multilingual model | Required VRAM | Relative speed |
 |:------:|:----------:|:------------------:|:------------------:|:-------------:|:--------------:|
 |  tiny  |    39 M    |     `tiny.en`      |       `tiny`       |     ~1 GB     |      ~32x      |
