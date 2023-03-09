@@ -11,6 +11,8 @@ Please install `FFmpeg` compatible with your OS from the following link.
 
 - `FFmpeg` : https://ffmpeg.org/download.html
 
+After installing FFmpeg, **make sure to add the `FFmpeg/bin` folder to your system PATH!**
+
 # Installation
 `git clone https://github.com/jhj0517/stable-diffusion-webui-Speech-To-Text-Prompter.git` to your stable-diffusion-webui extensions folder.
 
