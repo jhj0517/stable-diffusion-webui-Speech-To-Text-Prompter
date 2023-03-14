@@ -5,7 +5,6 @@ from scripts.stt_p_inference.whisper_inference import WhisperInference
 
 install_whisper()
 download_whispermodel()
-
 whisper_inf = WhisperInference()
 
 def on_change_models(model_size):
@@ -32,10 +31,10 @@ class STTPrompter(scripts.Script):
                 with gr.Column(scale=6): #configs
                     mic_prompt = gr.Microphone(label="Record your voice here",type="filepath", elem_id="stt_p_mic",interactive=True)
                     with gr.Row():
-                        dd_models = gr.Dropdown(choices=whisper_inf.available_models, label="Whisper Model", value = "medium")
-                        dd_langs = gr.Dropdown(choices=["Automatic Detection"]+whisper_inf.available_langs,value="Automatic Detection",label="Source Language")
+                        dd_models = gr.Dropdown(choices=whisper_inf.available_models, label="Whisper Model", value = "medium",elem_id="stt_p_models")
+                        dd_langs = gr.Dropdown(choices=["Automatic Detection"]+whisper_inf.available_langs,value="Automatic Detection",label="Source Language",elem_id="stt_p_langs")
                     with gr.Row():
-                        cb_translate = gr.Checkbox(value=False,label="Translate to English",interactive=True,visible=False)  
+                        cb_translate = gr.Checkbox(value=False,label="Translate to English",interactive=True,visible=False,elem_id="stt_p_translate")  
                     with gr.Row():
                         btn_transcribe = gr.Button("Transcribe",elem_id="stt_p_trans",variant="primary")       
 
@@ -43,8 +42,8 @@ class STTPrompter(scripts.Script):
                     with gr.Row():
                         tb_res = gr.Textbox(label="output",elem_id="stt_p_res",lines=7,interactive=False)
                     with gr.Row():
-                        btn_to_prompt = gr.Button("To prompt").style(full_width=False)   
-                        btn_to_negprompt = gr.Button("To negative prompt").style(full_width=False)  
+                        btn_to_prompt = gr.Button("To prompt",elem_id="stt_p_toprompt").style(full_width=False)   
+                        btn_to_negprompt = gr.Button("To negative prompt",elem_id="stt_p_toneg").style(full_width=False)  
 
             btn_transcribe.click(
                 fn=run_transcribe,
@@ -74,5 +73,8 @@ class STTPrompter(scripts.Script):
                 outputs=None
             )
 
-        return [stt_p_ui]
+        return []
+    
+    def run(self,p):
+        return 
     
